@@ -17,6 +17,7 @@ class MovieController extends Controller
         $genres   = $this->tmdb->getGenres();
 
         return view('movies.index', compact('trending', 'popular', 'genres'));
+
     }
 
     // Search results page

@@ -52,7 +52,7 @@ class User extends Authenticatable
         return $this->hasMany(Watchlist::class);
     }
 
-    public function favourites()
+    public function favorites()
     {
         return $this->hasMany(Favorite::class);
     }
