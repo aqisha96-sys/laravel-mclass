@@ -25,6 +25,9 @@
                                 <td>{{ $category->name }}</td>
                                 <td>
                                     <a href="{{ route('categories.edit', $category) }}">Edit</a>
+                                    
+                                </td>
+                                <td>
                                     <form method="POST" action="{{ route('categories.destroy', $category) }}">
                                         @csrf <!---cross site request forgery protection--->
                                         @method('DELETE')
